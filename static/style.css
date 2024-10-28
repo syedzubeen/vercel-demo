@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tile {
+    background-color: #5149c2;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Add shadow on hover */
+.tile:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.tile h2 {
+    margin: 0 0 10px;
+}
+
+/* Header styling */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+/* Logo styling */
+.logo {
+    width: 175px;  /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Styling links in tiles */
+.tile a {
+    color: white;         /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+.tile a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
